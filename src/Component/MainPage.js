@@ -10,8 +10,8 @@ const MainPage = () => {
   const [currentPage, setCurrentPage] = useState(1);
   const itemsPerPage = 6; // Number of cards to display per page
 
-  const categoriesApiKey = process.env.REACT_APP_CATEGORIES_API_KEY;
-  const searchApiKey = process.env.REACT_APP_SEARCH_API_KEY;
+  const categoriesApiKey = 'https://www.themealdb.com/api/json/v1/1/categories.php';
+  const searchApiKey = 'https://www.themealdb.com/api/json/v1/1/search.php?s=';
 
   useEffect(() => {
     document.body.className = isDarkMode ? 'dark-mode' : '';
